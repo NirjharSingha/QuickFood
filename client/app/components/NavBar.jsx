@@ -5,7 +5,10 @@ import Searchbar from "./Searchbar";
 
 const NavBar = () => {
   return (
-    <div className="navbar bg-base-100" style={{ backgroundColor: "#FDF2EA" }}>
+    <div
+      className="navbar h-[4rem] bg-base-100"
+      style={{ backgroundColor: "#d6c5b7" }}
+    >
       <Searchbar />
       <div className="navbar-center">
         <a className="btn btn-ghost text-xl">daisyUI</a>
