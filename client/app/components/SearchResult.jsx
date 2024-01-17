@@ -20,7 +20,7 @@ const SearchResult = ({ filteredData, setShowResult, containerRef }) => {
   }, []);
 
   return (
-    <div className="absolute top-16 left-14 w-[17.3rem] h-2/5 bg-gray-200 rounded-lg rounded-t-none border-0 border-gray-500 shadow-md overflow-x-hidden overflow-y-auto z-50 scrollNone">
+    <div className="absolute top-16 left-14 w-[17.3rem] h-[20rem] bg-gray-200 rounded-lg rounded-t-none border-0 border-gray-500 shadow-md overflow-x-hidden overflow-y-auto z-50 scrollNone">
       {filteredData.map((searchItem) => (
         <div
           key={searchItem}
