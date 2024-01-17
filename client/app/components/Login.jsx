@@ -4,6 +4,8 @@ import React from "react";
 import { useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { BsFillPersonFill } from "react-icons/bs";
+
+// npm install @react-oauth/google
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import { GoogleLogin } from "@react-oauth/google";
 
@@ -14,7 +16,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   return (
     <form
-      className="p-7 bg-purple-300 z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl"
+      className="p-7 bg-purple-300 z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl mt-[2rem]"
       style={{ boxShadow: "-3px 5px 5px rgba(0, 0, 0, 0.3)" }}
     >
       <div className="flex justify-center items-center mb-3">

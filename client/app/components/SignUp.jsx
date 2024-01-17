@@ -17,7 +17,7 @@ const SignUp = () => {
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
   return (
     <form
-      className="p-7 bg-purple-300 z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl"
+      className="p-7 bg-purple-300 z-50 fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-xl mt-[2rem]"
       style={{ boxShadow: "-3px 5px 5px rgba(0, 0, 0, 0.3)" }}
     >
       <div className="flex justify-center items-center mb-3">
@@ -74,10 +74,10 @@ const SignUp = () => {
         <input
           id="confirmPassword"
           name="confirmPassword"
-          type={showPass ? "text" : "password"}
+          type={showConfirmPassword ? "text" : "password"}
           className="indent-2 rounded border-none outline-none cursor-pointer w-full font-sans bg-purple-300"
           placeholder="Confirm password"
-          value={password}
+          value={confirmPassword}
           onChange={(e) => {
             setWarning("");
             setConfirmPassword(e.target.value);
