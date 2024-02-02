@@ -41,14 +41,14 @@ const NavBar = () => {
         className="navbar h-[4rem] bg-base-100 sticky"
         style={{ backgroundColor: "#d6c5b7" }}
       >
-        <div className="flex items-center ml-8 navbar-start">
+        <div className="flex items-center ml-4 navbar-start">
           <div className="bg-yellow-50 p-[0.35rem] flex justify-center items-center mr-2 rounded-full border-2 border-solid border-white">
             <Image src={FavIcon} alt="logo" width={30} />
           </div>
           <Searchbar />
         </div>
         <div className="navbar-center">
-          <a className="btn btn-ghost text-xl">daisyUI</a>
+          <a className="btn btn-ghost text-xl font-sans">QuickFood</a>
         </div>
         <div className="navbar-end">
           <button className="btn btn-ghost btn-circle">
