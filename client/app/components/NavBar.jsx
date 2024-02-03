@@ -10,6 +10,7 @@ import Login from "./Login";
 import SignUp from "./SignUp";
 import FavIcon from "@/public/favicon.ico";
 import Image from "next/image";
+import Profile from "./Profile";
 
 const NavBar = () => {
   const { windowWidth, setWindowWidth } = useGlobals();
@@ -37,6 +38,7 @@ const NavBar = () => {
       {showSignUp && (
         <SignUp setShowSignUp={setShowSignUp} setShowLogin={setShowLogin} />
       )}
+      <Profile />
       <div
         className="navbar h-[4rem] bg-base-100 sticky"
         style={{ backgroundColor: "#d6c5b7" }}
